@@ -1,14 +1,21 @@
 {
-  "name": "automation_search_tc1",
+  "name": "playwright-agents",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test:chromium": "playwright test --project=chromium",
+    "test:headed": "playwright test --headed",
+    "test:report": "playwright show-report"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@playwright/test": "^1.56.1",
     "@types/node": "^24.10.0"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3"
   }
 }
